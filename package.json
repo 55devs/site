@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "build:css": "tailwindcss -i ./css/input.css -o ./css/styles.css --minify",
-    "watch:css": "tailwindcss -i ./css/input.css -o ./css/styles.css --watch"
+    "watch:css": "tailwindcss -i ./css/input.css -o ./css/styles.css --watch",
+    "serve": "npx --yes serve . -p 3000"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
