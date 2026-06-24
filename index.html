@@ -1,281 +1,176 @@
 <!DOCTYPE html>
-
 <html class="dark" lang="pt-BR">
-
 <head>
-
   <meta charset="utf-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>55Devs — Soluções inteligentes sob medida</title>
-
   <meta name="description" content="55Devs — Software House focada em soluções sob medida, microsserviços e integração de IA.">
+  <meta name="theme-color" content="#131313">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://55devs.tech/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://55devs.tech/">
+  <meta property="og:title" content="55Devs — Soluções inteligentes sob medida">
+  <meta property="og:description" content="Software House focada em soluções sob medida, microsserviços e integração de IA.">
+  <meta property="og:image" content="https://55devs.tech/assets/garden-notes.jpg">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="55Devs — Soluções inteligentes sob medida">
+  <meta name="twitter:description" content="Software House focada em soluções sob medida, microsserviços e integração de IA.">
 
   <link rel="icon" type="image/png" href="assets/fav.png">
   <link rel="apple-touch-icon" href="assets/fav.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@24,300,0&display=swap" rel="stylesheet">
-
+  <link rel="preload" href="./css/styles.css" as="style">
   <link rel="stylesheet" href="./css/styles.css">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap">
+  </noscript>
 </head>
-
 <body class="selection:bg-primary-container selection:text-on-primary-container">
 
+<a href="#inicio" class="skip-link" data-i18n="a11y.skip">Ir para o conteúdo</a>
 
-
-<nav class="fixed top-0 w-full z-50 bg-glass-bg backdrop-blur-xl border-b border-outline-variant">
-
-  <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto gap-stack-md">
-
+<nav class="fixed top-0 w-full z-50 bg-glass-bg backdrop-blur-xl border-b border-outline-variant safe-top">
+  <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 md:h-20 max-w-container-max mx-auto gap-stack-md">
     <a href="#inicio" class="flex items-center gap-stack-sm shrink-0">
-
-      <span class="material-symbols-outlined text-primary">code</span>
-
+      <svg class="icon text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M8.5 6.5L3 12l5.5 5.5M15.5 6.5L21 12l-5.5 5.5M14 4l-4 16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
       <span class="text-headline-md font-headline-md font-bold tracking-tight text-on-surface">55Devs</span>
-
     </a>
 
     <div class="hidden md:flex items-center gap-stack-lg">
-
       <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#inicio" data-i18n="nav.home">Início</a>
-
       <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#case-studies" data-i18n="nav.projects">Projetos</a>
-
       <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#equipe" data-i18n="nav.team">Equipe</a>
-
       <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#contact" data-i18n="nav.contact">Contato</a>
-
       <div class="lang-switcher flex items-center gap-1 border-l border-outline-variant pl-stack-md ml-1" role="group" data-i18n-attr="aria-label:a11y.langGroup" aria-label="Idioma">
-
         <button type="button" class="lang-btn" data-lang="pt" aria-pressed="true">PT</button>
-
         <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
-
         <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
-
       </div>
-
     </div>
 
     <div class="flex items-center gap-stack-sm md:hidden">
-
       <div class="lang-switcher flex items-center gap-1" role="group" data-i18n-attr="aria-label:a11y.langGroup" aria-label="Idioma">
-
         <button type="button" class="lang-btn" data-lang="pt" aria-pressed="true">PT</button>
-
         <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
-
         <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
-
       </div>
-
-      <button type="button" class="text-on-surface p-2" id="mobileMenuBtn" data-i18n-attr="aria-label:a11y.menuOpen" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
-
-        <span class="material-symbols-outlined icon-menu">menu</span>
-
-        <span class="material-symbols-outlined icon-close hidden">close</span>
-
+      <button type="button" class="text-on-surface p-2 -mr-2" id="mobileMenuBtn" data-i18n-attr="aria-label:a11y.menuOpen" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg class="icon icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+        </svg>
+        <svg class="icon icon-close hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+        </svg>
       </button>
-
     </div>
-
   </div>
 
   <div id="mobileMenu" class="hidden md:hidden border-t border-outline-variant bg-glass-bg px-margin-mobile py-stack-md flex flex-col gap-stack-md">
-
-    <a class="text-label-md font-label-md text-on-surface" href="#inicio" data-i18n="nav.home">Início</a>
-
-    <a class="text-label-md font-label-md text-on-surface" href="#case-studies" data-i18n="nav.projects">Projetos</a>
-
-    <a class="text-label-md font-label-md text-on-surface" href="#equipe" data-i18n="nav.team">Equipe</a>
-
-    <a class="text-label-md font-label-md text-primary" href="#contact" data-i18n="nav.contact">Contato</a>
-
+    <a class="text-label-md font-label-md text-on-surface py-1" href="#inicio" data-i18n="nav.home">Início</a>
+    <a class="text-label-md font-label-md text-on-surface py-1" href="#case-studies" data-i18n="nav.projects">Projetos</a>
+    <a class="text-label-md font-label-md text-on-surface py-1" href="#equipe" data-i18n="nav.team">Equipe</a>
+    <a class="text-label-md font-label-md text-primary py-1" href="#contact" data-i18n="nav.contact">Contato</a>
   </div>
-
 </nav>
 
-
-
-<main class="pt-20">
-
-  <section id="inicio" class="scroll-mt-20 relative min-h-[80vh] flex flex-col items-center justify-center text-center px-margin-mobile hero-glow overflow-hidden">
-
+<main class="pt-16 md:pt-20">
+  <section id="inicio" class="scroll-mt-16 md:scroll-mt-20 relative min-h-[min(80vh,720px)] flex flex-col items-center justify-center text-center px-margin-mobile hero-glow overflow-hidden">
     <div class="max-w-4xl mx-auto space-y-stack-lg reveal">
-
-      <h1 class="text-4xl md:text-display font-display leading-tight font-bold text-glow">
-
+      <h1 class="text-[clamp(2rem,6vw,4.5rem)] md:text-display font-display leading-[1.1] font-bold text-glow">
         <span data-i18n="hero.titleLine1">Construímos o amanhã</span><br>
-
         <span class="text-on-surface-variant font-light" data-i18n="hero.titleLine2">de maneira inteligente.</span>
-
       </h1>
-
-      <p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed" data-i18n="hero.subtitle">
-
+      <p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed text-balance" data-i18n="hero.subtitle">
         Somos uma Software House focada em soluções sob medida para o seu projeto.
-
       </p>
-
       <div class="pt-stack-lg flex flex-col sm:flex-row gap-stack-md justify-center items-center">
-
-        <a href="#contact" class="w-full sm:w-auto bg-primary text-on-primary px-8 py-4 text-label-md font-label-md uppercase tracking-wider rounded-lg hover:scale-105 active:scale-95 transition-transform text-center" data-i18n="hero.ctaContact">Fale conosco</a>
-
-        <a href="#case-studies" class="w-full sm:w-auto border border-outline-variant text-on-surface px-8 py-4 text-label-md font-label-md uppercase tracking-wider rounded-lg hover:bg-white/5 transition-colors text-center" data-i18n="hero.ctaProjects">Ver projetos</a>
-
+        <a href="#contact" class="w-full sm:w-auto bg-primary text-on-primary px-8 py-3.5 md:py-4 text-label-md font-label-md uppercase tracking-wider rounded-lg hover:scale-105 active:scale-95 transition-transform text-center" data-i18n="hero.ctaContact">Fale conosco</a>
+        <a href="#case-studies" class="w-full sm:w-auto border border-outline-variant text-on-surface px-8 py-3.5 md:py-4 text-label-md font-label-md uppercase tracking-wider rounded-lg hover:bg-white/5 transition-colors text-center" data-i18n="hero.ctaProjects">Ver projetos</a>
       </div>
-
     </div>
-
-    <div class="absolute -bottom-20 left-1/2 -translate-x-1/2 w-full max-w-6xl aspect-[21/9] bg-gradient-to-t from-primary/5 to-transparent rounded-full blur-[120px] pointer-events-none"></div>
-
+    <div class="absolute -bottom-20 left-1/2 -translate-x-1/2 w-full max-w-6xl aspect-[21/9] bg-gradient-to-t from-primary/5 to-transparent rounded-full blur-[120px] pointer-events-none" aria-hidden="true"></div>
   </section>
 
-
-
-  <section class="scroll-mt-20 py-stack-lg md:py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="case-studies">
-
+  <section class="scroll-mt-16 md:scroll-mt-20 py-stack-lg md:py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="case-studies">
     <div class="max-w-2xl mx-auto text-center space-y-stack-md mb-10 md:mb-12 reveal">
-
       <span class="text-label-md font-label-md text-primary uppercase tracking-widest" data-i18n="projects.label">Projetos</span>
-
-      <h2 class="text-3xl md:text-headline-lg font-headline-lg text-on-surface" data-i18n="projects.title">Foco no que importa.</h2>
-
-      <p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed" data-i18n="projects.subtitle">
-
+      <h2 class="text-3xl md:text-headline-lg font-headline-lg text-on-surface text-balance" data-i18n="projects.title">Foco no que importa.</h2>
+      <p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed text-balance" data-i18n="projects.subtitle">
         Desenhamos soluções digitais sob medida para o seu projeto.
-       
       </p>
-
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md md:gap-gutter max-w-4xl mx-auto reveal">
-
       <article class="project-card group">
-
-        <img alt="Garden Notes" width="800" height="500" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70" src="assets/garden-notes.jpg">
-
+        <picture>
+          <source type="image/webp" srcset="assets/garden-notes.webp">
+          <img alt="Garden Notes" width="800" height="500" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70" src="assets/garden-notes.jpg">
+        </picture>
         <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
-
         <div class="absolute bottom-0 left-0 w-full p-stack-md flex flex-col gap-1.5 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-
           <div class="flex flex-wrap gap-1.5 justify-center md:justify-start">
-
             <span class="px-2.5 py-0.5 bg-primary/10 border border-primary/20 text-primary text-label-sm font-label-sm rounded-full">IoT</span>
-
             <span class="px-2.5 py-0.5 bg-primary/10 border border-primary/20 text-primary text-label-sm font-label-sm rounded-full">Mobile</span>
-
           </div>
-
           <h3 class="text-xl md:text-2xl font-headline-md text-primary">Garden Notes</h3>
-
           <p class="text-body-md font-body-md text-on-surface-variant line-clamp-2" data-i18n="projects.gardenDesc">Solução de gerenciamento para jardins de alto padrão.</p>
-
         </div>
-
       </article>
 
       <article class="project-card group">
-
-        <img alt="AssocIA" width="800" height="500" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60" src="assets/sentinel-ai.jpg">
-
+        <picture>
+          <source type="image/webp" srcset="assets/sentinel-ai.webp">
+          <img alt="AssocIA" width="800" height="500" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60" src="assets/sentinel-ai.jpg">
+        </picture>
         <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
-
         <div class="absolute bottom-0 left-0 w-full p-stack-md flex flex-col gap-1.5 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-
           <div class="flex flex-wrap gap-1.5 justify-center md:justify-start">
-
             <span class="px-2.5 py-0.5 bg-primary/10 border border-primary/20 text-primary text-label-sm font-label-sm rounded-full">AI/ML</span>
-
             <span class="px-2.5 py-0.5 bg-primary/10 border border-primary/20 text-primary text-label-sm font-label-sm rounded-full" data-i18n="projects.assocTag2">Infra / Administração</span>
-
           </div>
-
           <h3 class="text-xl md:text-2xl font-headline-md text-primary">AssocIA</h3>
-
           <p class="text-body-md font-body-md text-on-surface-variant line-clamp-2" data-i18n="projects.assocDesc">Software para gerenciamento de associações com módulos personalizados para cada setor.</p>
-
         </div>
-
       </article>
-
     </div>
-
   </section>
 
-
-
-  <section id="equipe" class="scroll-mt-20 py-stack-lg md:py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-outline-variant">
-
+  <section id="equipe" class="scroll-mt-16 md:scroll-mt-20 py-stack-lg md:py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-outline-variant">
     <div class="max-w-2xl mx-auto text-center space-y-stack-md reveal">
-
       <span class="text-label-md font-label-md text-primary uppercase tracking-widest" data-i18n="team.label">Equipe</span>
-
-      <h2 class="text-3xl md:text-headline-lg font-headline-lg text-on-surface" data-i18n="team.title">Experiência que escala.</h2>
-
-      <p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed" data-i18n="team.body">
-
+      <h2 class="text-3xl md:text-headline-lg font-headline-lg text-on-surface text-balance" data-i18n="team.title">Experiência que escala.</h2>
+      <p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed text-pretty" data-i18n="team.body">
         Time com especialistas atuando há mais de 6 anos em microsserviços de alta performance, sistemas orientados a eventos e integração de IA. Com experiências em diversos times, em plataformas de grande escala para projetos alocados na Warner Bros., DHL Express, Banco Mercedes-Benz, Nestlé, ABInBev, Suzano, entre outros.
-
       </p>
-
     </div>
-
   </section>
 
-
-
-  <section id="contact" class="scroll-mt-20 py-stack-lg md:py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-outline-variant">
-
+  <section id="contact" class="scroll-mt-16 md:scroll-mt-20 py-stack-lg md:py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-outline-variant safe-bottom">
     <div class="max-w-2xl mx-auto text-center space-y-stack-md reveal">
-
       <span class="text-label-md font-label-md text-primary uppercase tracking-widest" data-i18n="contact.label">Contato</span>
-
-      <h2 class="text-3xl md:text-headline-lg font-headline-lg text-on-surface" data-i18n="contact.title">Vamos conversar sobre o seu projeto.</h2>
-
+      <h2 class="text-3xl md:text-headline-lg font-headline-lg text-on-surface text-balance" data-i18n="contact.title">Vamos conversar sobre o seu projeto.</h2>
       <p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
-
         <span data-i18n="contact.body">Envie um e-mail para:</span>
-
-        <a href="mailto:contact@55devs.tech" class="inline-block text-label-md font-label-md text-primary hover:text-on-surface transition-colors">contact@55devs.tech</a>
-
+        <a href="mailto:contact@55devs.tech" class="inline-block text-label-md font-label-md text-primary hover:text-on-surface transition-colors break-all">contact@55devs.tech</a>
       </p>
-
     </div>
-
   </section>
-
-
-
 </main>
 
-
-
 <footer class="bg-surface-container-lowest py-stack-lg border-t border-outline-variant">
-
   <div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-stack-md">
-
-    <div class="flex flex-col items-center md:items-start gap-stack-sm">
-
-      <p class="text-body-md font-body-md text-on-surface-variant" data-i18n="footer.copyright">© 2026 55Devs | Soluções digitais inteligentes sob medida.</p>
-
-    </div>
-
+    <p class="text-body-md font-body-md text-on-surface-variant text-center md:text-left" data-i18n="footer.copyright">© 2026 55Devs | Soluções digitais inteligentes sob medida.</p>
   </div>
-
 </footer>
 
-
-
 <script src="./js/app.js" defer></script>
-
 </body>
-
 </html>
-
